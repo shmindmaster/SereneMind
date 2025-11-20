@@ -1,6 +1,13 @@
 # SereneMind - Agent Development Guide
 
-> NOTE: This file was cloned from a generic FlashMaster template. The sections below describe a generic Next.js + Azure OpenAI app and are **not** specific to SereneMind. For SereneMind architecture and agent behavior, see README.md and copilot-instructions.md in this repo.
+## Architecture Overview (SereneMind)
+
+SereneMind is a **Next.js 13.5 App Router** frontend that demos high-quality mental health UX and patient/physician flows. This repo is **frontend-first** and uses static export (`output: 'export'` in `next.config.js`).
+
+- All Azure OpenAI / Azure AI Search / Postgres logic lives in shared MahumTech backends and future services, not in this repo.
+- Treat this app as a secure, accessibility-focused mental health UI shell that will call your own HIPAA-compliant APIs.
+
+> NOTE: The remaining sections below are cloned from a generic FlashMaster Next.js template and are **not** SereneMind-specific. Use them only as generic Azure OpenAI / Next.js patterns, and rely on `README.md` + `copilot-instructions.md` for SereneMind behavior.
 
 ## Architecture Overview (generic template)
 

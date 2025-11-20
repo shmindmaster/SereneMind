@@ -21,13 +21,15 @@ Built specifically for startups and small-to-medium mental health practices, Ser
 
 ### Technology Stack
 
-- **Frontend**: React 19, TypeScript, Vite, Tailwind CSS
-- **Backend**: Node.js, Express, TypeScript
-- **Database**: Azure Database for PostgreSQL with pgvector
-- **AI Services**: Azure OpenAI (Responses API), Azure AI Search
-- **Storage**: Azure Blob Storage
-- **Authentication**: NextAuth.js / Custom JWT
-- **Deployment**: Azure Static Web Apps / Azure App Service
+> **Current repo vs target architecture**: This repository contains the **Next.js frontend** only. The Node/Express, Postgres, and Azure AI pieces below describe the **target backend architecture** running on the shared MahumTech platform.
+
+- **Frontend (current repo)**: Next.js 13.5 App Router, React 18, TypeScript, Tailwind CSS (static export)
+- **Backend (target)**: Node.js, Express/FastAPI, TypeScript running behind secure APIs
+- **Database (target)**: Azure Database for PostgreSQL with pgvector
+- **AI Services (target)**: Azure OpenAI (Responses API), Azure AI Search
+- **Storage (target)**: Azure Blob Storage
+- **Authentication (target)**: NextAuth.js / Custom JWT
+- **Deployment**: Azure Static Web Apps (frontend) + Azure App Service / Container Apps (backend)
 
 ### Shared Azure Infrastructure
 
